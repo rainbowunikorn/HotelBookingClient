@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.khviasko.hotel.controller.common.RegistrationController">
+
+    <ImageView fitHeight="505.0" fitWidth="818.0" pickOnBounds="true">
+        <Image url="@../images/background.jpg" />
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffb8" height="403.0" layoutX="127.0" layoutY="43.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="627.0" />
+   <Text layoutX="146.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добро пожаловать на страницу регистрации!">
+      <font>
+         <Font name="Bookman Old Style" size="21.0" />
+      </font></Text>
+   <TextField fx:id="firstnameField" layoutX="246.0" layoutY="131.0" prefHeight="36.0" prefWidth="225.0" />
+   <TextField fx:id="surnameField" layoutX="246.0" layoutY="197.0" prefHeight="36.0" prefWidth="225.0" />
+   <TextField fx:id="loginField" layoutX="246.0" layoutY="264.0" prefHeight="36.0" prefWidth="225.0" />
+   <PasswordField fx:id="passwordField" layoutX="246.0" layoutY="329.0" prefHeight="36.0" prefWidth="225.0" />
+   <Text layoutX="146.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя" wrappingWidth="68.13671875">
+      <font>
+         <Font name="Bookman Old Style" size="15.0" />
+      </font></Text>
+   <Text layoutX="146.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия">
+      <font>
+         <Font name="Bookman Old Style" size="15.0" />
+      </font></Text>
+   <Text layoutX="146.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин">
+      <font>
+         <Font name="Bookman Old Style" size="15.0" />
+      </font></Text>
+   <Text layoutX="146.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль">
+      <font>
+         <Font name="Bookman Old Style" size="15.0" />
+      </font></Text>
+   <Button fx:id="registerButton" layoutX="641.0" layoutY="398.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" text="Регистрация" />
+   <Button fx:id="backButton" layoutX="138.0" layoutY="398.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" text="Назад" />
+
+   <Text fx:id="loginValidationField" fill="RED" layoutX="491.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="244.13671875" />
+   <Text fx:id="passwordValidationField" fill="RED" layoutX="491.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="244.13671875" />
+   <Text fx:id="firstnameValidationField" fill="RED" layoutX="491.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="244.13671875" />
+   <Text fx:id="surnameValidationField" fill="RED" layoutX="491.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="244.13671875" />
+</AnchorPane>
