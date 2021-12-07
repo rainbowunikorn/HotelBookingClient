@@ -9,6 +9,16 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @EqualsAndHashCode
-public class RoleDTO {
-    private String roleValue;
+public class RoomDTO {
+    private Long id;
+
+    private String roomNumber;
+
+    private String roomType;
+
+    private int capacity;
+
+    private double price;
+
+    private String description;
 }

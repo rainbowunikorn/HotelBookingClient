@@ -38,7 +38,7 @@ public class UserMenuController {
 
         roomsButton.setOnAction(event -> {
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("/fxml/rooms.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("/fxml/userRooms.fxml"));
                 StageConfig.stage.setTitle(Constants.HOTEL_TITLE);
                 StageConfig.stage.setScene(new Scene(root, 800, 450));
                 StageConfig.stage.setResizable(false);
@@ -50,7 +50,7 @@ public class UserMenuController {
 
         reservationsButton.setOnAction(event -> {
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("/fxml/reservations.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("/fxml/userReservations.fxml"));
                 StageConfig.stage.setTitle(Constants.HOTEL_TITLE);
                 StageConfig.stage.setScene(new Scene(root, 800, 450));
                 StageConfig.stage.setResizable(false);
@@ -76,7 +76,7 @@ public class UserMenuController {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
                 Query.setRole("");
-                Query.setAccountId(0L);
+                Query.setUserId(0L);
                 StageConfig.stage.setTitle(Constants.HOTEL_TITLE);
                 StageConfig.stage.setScene(new Scene(root, 800, 450));
                 StageConfig.stage.setResizable(false);

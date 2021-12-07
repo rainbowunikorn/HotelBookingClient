@@ -11,6 +11,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class UserDTO {
+    private Long id;
+
     private String login;
 
     private String password;
@@ -21,5 +23,5 @@ public class UserDTO {
 
     private boolean isDeleted;
 
-    private RoleDTO role;
+    private String role;
 }

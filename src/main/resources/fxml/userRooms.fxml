@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.khviasko.hotel.controller.user.UserRoomsCommand">
+
+
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="570.0" layoutX="-45.0" layoutY="-57.0" stroke="WHITE" strokeType="INSIDE" width="852.0">
+        <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color red="0.3989400565624237" green="0.7448678016662598" blue="0.7763158082962036" />
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                    </Stop>
+                </stops>
+            </LinearGradient>
+        </fill>
+    </Rectangle>
+    <TableView fx:id="roomTable" layoutX="113.0" layoutY="87.0" prefHeight="381.0" prefWidth="581.0">
+        <columns>
+            <TableColumn fx:id="number" prefWidth="93.0" text="Номер" />
+            <TableColumn fx:id="type" prefWidth="113.0" text="Тип" />
+            <TableColumn fx:id="capacity" prefWidth="103.0" text="Вместимость" />
+            <TableColumn fx:id="price" prefWidth="84.0" text="Стоимость" />
+            <TableColumn fx:id="description" prefWidth="187.0" text="Описание" />
+        </columns>
+    </TableView>
+    <Button fx:id="backButton" layoutX="604.0" layoutY="38.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" text="Назад" />
+    <Button fx:id="orderButton" layoutX="113.0" layoutY="38.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="109.0" text="Заронировать" />
+
+
+</AnchorPane>

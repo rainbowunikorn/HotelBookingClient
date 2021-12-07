@@ -11,7 +11,10 @@ import lombok.Setter;
 @Getter
 public class QueryDTO {
     private String command;
-    private Long accountId;
+    private Long userId;
     private String role;
+    private Long roomId;
+    private Long reservationId;
+
 }
 

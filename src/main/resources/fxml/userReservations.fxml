@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.khviasko.hotel.controller.user.UserReservationsController">
+
+    <ImageView fitHeight="505.0" fitWidth="818.0" pickOnBounds="true">
+        <Image url="@../images/background.jpg" />
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffb8" height="403.0" layoutX="127.0" layoutY="43.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="627.0" />
+    <Text layoutX="146.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Данные о заказе">
+        <font>
+            <Font name="Bookman Old Style" size="21.0" />
+        </font></Text>
+    <Text layoutX="142.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер комнаты" wrappingWidth="143.0">
+        <font>
+            <Font name="Bookman Old Style" size="15.0" />
+        </font></Text>
+    <Text layoutX="143.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тип комнаты">
+        <font>
+            <Font name="Bookman Old Style" size="15.0" />
+        </font></Text>
+    <Text layoutX="144.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вместимость">
+        <font>
+            <Font name="Bookman Old Style" size="15.0" />
+        </font></Text>
+    <Text layoutX="146.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статус заказа" wrappingWidth="111.14501953125">
+        <font>
+            <Font name="Bookman Old Style" size="15.0" />
+        </font></Text>
+    <Button fx:id="backButton" layoutX="636.0" layoutY="402.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" text="Назад" />
+   <Text layoutX="146.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата создания">
+      <font>
+         <Font name="Bookman Old Style" size="15.0" />
+      </font>
+   </Text>
+   <Text layoutX="146.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Итоговая стоимость">
+      <font>
+         <Font name="Bookman Old Style" size="15.0" />
+      </font>
+   </Text>
+
+
+
+   <Text fx:id="number" layoutX="368.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="номер" wrappingWidth="233.13671875" >
+    <font>
+        <Font name="Bookman Old Style" size="15.0" />
+    </font>
+   </Text>
+
+   <Text fx:id="type" layoutX="368.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="тип" wrappingWidth="233.13671875" >
+    <font>
+        <Font name="Bookman Old Style" size="15.0" />
+    </font>
+   </Text>
+
+   <Text fx:id="capacity" layoutX="368.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="вместимость" wrappingWidth="233.13671875" >
+    <font>
+        <Font name="Bookman Old Style" size="15.0" />
+    </font>
+   </Text>
+
+   <Text fx:id="status" layoutX="368.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="статус" wrappingWidth="233.13671875" >
+    <font>
+        <Font name="Bookman Old Style" size="15.0" />
+    </font>
+   </Text>
+
+   <Text fx:id="date" layoutX="368.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="дата" wrappingWidth="233.13671875" >
+    <font>
+        <Font name="Bookman Old Style" size="15.0" />
+    </font>
+   </Text>
+
+   <Text fx:id="price" layoutX="368.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="стоимость" wrappingWidth="233.13671875" >
+    <font>
+        <Font name="Bookman Old Style" size="15.0" />
+    </font>
+   </Text>
+</AnchorPane>

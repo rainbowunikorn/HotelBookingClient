@@ -1,17 +1,17 @@
 package com.bsuir.khviasko.hotel.service;
 
 public class Query {
-    private static Long accountId;
+    private static Long userId;
     private static String role;
     private static String prevCommand;
     private static Long roomId;
 
-    public static void setAccountId(Long accountId) {
-        Query.accountId = accountId;
+    public static void setUserId(Long userId) {
+        Query.userId = userId;
     }
 
-    public static Long getAccountId() {
-        return accountId;
+    public static Long getUserId() {
+        return userId;
     }
 
     public static void setRole(String role) {

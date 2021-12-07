@@ -91,7 +91,7 @@ public class AdminMenuController {
                 PrintWriter printWriter = new PrintWriter(file);
                 Gson gson = new Gson();
                 QueryDTO queryDTO = new QueryDTO();
-                queryDTO.setAccountId(Query.getAccountId());
+                queryDTO.setUserId(Query.getUserId());
                 queryDTO.setCommand("view_reservations");
 
                 SocketService.writeLine(gson.toJson(queryDTO));
@@ -134,7 +134,7 @@ public class AdminMenuController {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
                 Query.setRole("");
-                Query.setAccountId(0L);
+                Query.setUserId(0L);
                 StageConfig.stage.setTitle(Constants.HOTEL_TITLE);
                 StageConfig.stage.setScene(new Scene(root, 800, 450));
                 StageConfig.stage.setResizable(false);

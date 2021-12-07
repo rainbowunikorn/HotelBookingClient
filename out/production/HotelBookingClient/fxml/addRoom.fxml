@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.khviasko.hotel.controller.admin.AddRoomController">
+
+    <ImageView fitHeight="505.0" fitWidth="818.0" pickOnBounds="true">
+        <Image url="@../images/background.jpg" />
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffb8" height="403.0" layoutX="127.0" layoutY="43.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="627.0" />
+    <Text layoutX="146.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавление новой комнаты">
+        <font>
+            <Font name="Bookman Old Style" size="21.0" />
+        </font></Text>
+    <TextField fx:id="numberField" layoutX="246.0" layoutY="103.0" prefHeight="36.0" prefWidth="225.0" />
+    <TextField fx:id="typeField" layoutX="246.0" layoutY="154.0" prefHeight="36.0" prefWidth="225.0" />
+    <TextField fx:id="capacityField" layoutX="246.0" layoutY="204.0" prefHeight="36.0" prefWidth="225.0" />
+    <TextField fx:id="priceField" layoutX="246.0" layoutY="255.0" prefHeight="36.0" prefWidth="225.0" />
+    <TextField fx:id="descriptionField" layoutX="246.0" layoutY="302.0" prefHeight="36.0" prefWidth="225.0" />
+    <Text layoutX="140.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер" wrappingWidth="68.13671875">
+        <font>
+            <Font name="Bookman Old Style" size="15.0" />
+        </font></Text>
+    <Text layoutX="140.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тип">
+        <font>
+            <Font name="Bookman Old Style" size="15.0" />
+        </font></Text>
+    <Text layoutX="140.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вместимость">
+        <font>
+            <Font name="Bookman Old Style" size="15.0" />
+        </font></Text>
+    <Text layoutX="142.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Стоимость">
+        <font>
+            <Font name="Bookman Old Style" size="15.0" />
+        </font></Text>
+    <Button fx:id="addButton" layoutX="641.0" layoutY="398.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" text="Добавить" />
+    <Button fx:id="backButton" layoutX="138.0" layoutY="398.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" text="Назад" />
+
+   <Text layoutX="143.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Описание">
+      <font>
+         <Font name="Bookman Old Style" size="15.0" />
+      </font>
+   </Text>
+</AnchorPane>

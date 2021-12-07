@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.bsuir.khviasko.hotel.controller.menu.AdminMenuController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.khviasko.hotel.controller.menu.AdminMenuController">
+    <ImageView fitHeight="505.0" fitWidth="818.0" pickOnBounds="true">
+        <Image url="@../images/background.jpg" />
+    </ImageView>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cbf6ffa8" height="505.0" stroke="#cff9ff" strokeType="INSIDE" width="251.0" />
+   <Text fill="WHITE" layoutX="93.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Меню">
+      <font>
+         <Font name="Bookman Old Style Bold" size="22.0" />
+      </font></Text>
+   <Button fx:id="usersButton" layoutX="26.0" layoutY="75.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="Пользователи" />
+   <Button fx:id="roomsButton" layoutX="26.0" layoutY="128.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="Номерной фонд" />
+   <Button fx:id="reservationsButton" layoutX="26.0" layoutY="179.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="Заказы" />
+   <Button fx:id="profitChartButton" layoutX="26.0" layoutY="228.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="График прибыли" />
+   <Button fx:id="reportButton" layoutX="26.0" layoutY="277.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="Отчет" />
+    <Button fx:id="backButton" layoutX="26.0" layoutY="378.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="85.0" text="Выход" />
 </AnchorPane>

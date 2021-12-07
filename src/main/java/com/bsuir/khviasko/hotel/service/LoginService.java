@@ -20,7 +20,7 @@ public class LoginService {
                 return "REJECTED";
             }
             JsonObject jsonObject = gson.fromJson(response, JsonObject.class);
-            Query.setAccountId(jsonObject.get("id").getAsLong());
+            Query.setUserId(jsonObject.get("id").getAsLong());
             Query.setRole(jsonObject.get("role").getAsJsonObject().get("roleValue").getAsString());
         } catch (Exception e) {
             System.out.println("Error: server disconnected");

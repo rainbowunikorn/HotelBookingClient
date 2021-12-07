@@ -19,6 +19,6 @@
     <Button fx:id="userButton" layoutX="26.0" layoutY="75.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="Профиль" />
     <Button fx:id="roomsButton" layoutX="26.0" layoutY="128.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="Номерной фонд" />
     <Button fx:id="roomChartButton" layoutX="26.0" layoutY="220.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="График стоимости номеров" />
-    <Button fx:id="backButton" layoutX="26.0" layoutY="447.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="85.0" text="Выход" />
+    <Button fx:id="backButton" layoutX="26.0" layoutY="378.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="85.0" text="Выход"  />
     <Button fx:id="reservationsButton" layoutX="26.0" layoutY="175.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="Мои заказы" />
 </AnchorPane>
