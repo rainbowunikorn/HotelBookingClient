@@ -77,6 +77,7 @@ public class UserMenuController {
                 Parent root = FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
                 Query.setRole("");
                 Query.setUserId(0L);
+                Query.setPrevCommand("");
                 StageConfig.stage.setTitle(Constants.HOTEL_TITLE);
                 StageConfig.stage.setScene(new Scene(root, 800, 450));
                 StageConfig.stage.setResizable(false);

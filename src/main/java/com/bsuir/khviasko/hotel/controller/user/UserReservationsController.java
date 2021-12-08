@@ -6,7 +6,6 @@ import com.bsuir.khviasko.hotel.dto.QueryDTO;
 import com.bsuir.khviasko.hotel.service.Query;
 import com.bsuir.khviasko.hotel.stageConfig.StageConfig;
 import com.google.gson.Gson;
-import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -49,20 +48,30 @@ public class UserReservationsController {
         try {
             SocketService.writeLine(gson.toJson(queryDTO));
             String response = SocketService.getReader().readLine();
-            JsonObject jsonObject = gson.fromJson(response, JsonObject.class);
 
-            number.setText(jsonObject.get("room").getAsJsonObject().get("roomNumber").getAsString());
-            type.setText(jsonObject.get("room").getAsJsonObject().get("roomType").getAsString());
-            capacity.setText(jsonObject.get("room").getAsJsonObject().get("capacity").getAsString());
-            status.setText(jsonObject.get("reservationStatus").getAsJsonObject().get("statusValue").getAsString());
-            price.setText(jsonObject.get("totalPrice").getAsString());
 
-            final JsonObject jsonDate = jsonObject.get("createDate").getAsJsonObject().get("date").getAsJsonObject();
-            LocalDate localDate = LocalDate.of(jsonDate.get("year").getAsInt(), jsonDate.get("month").getAsInt(), jsonDate.get("day").getAsInt());
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd LLLL yyyy");
-            String formattedString = localDate.format(formatter);
+            if (response.contains("EMPTY")) {
+                number.setText("");
+                type.setText("");
+                capacity.setText("");
+                status.setText("");
+                price.setText("");
+                date.setText("");
+            } else {
 
-            date.setText(formattedString);
+                JsonObject jsonObject = gson.fromJson(response, JsonObject.class);
+                number.setText(jsonObject.get("room").getAsJsonObject().get("roomNumber").getAsString());
+                type.setText(jsonObject.get("room").getAsJsonObject().get("roomType").getAsString());
+                capacity.setText(jsonObject.get("room").getAsJsonObject().get("capacity").getAsString());
+                status.setText(jsonObject.get("reservationStatus").getAsJsonObject().get("statusValue").getAsString());
+                price.setText(jsonObject.get("totalPrice").getAsString());
+
+                final JsonObject jsonDate = jsonObject.get("createDate").getAsJsonObject().get("date").getAsJsonObject();
+                LocalDate localDate = LocalDate.of(jsonDate.get("year").getAsInt(), jsonDate.get("month").getAsInt(), jsonDate.get("day").getAsInt());
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd LLLL yyyy");
+                String formattedString = localDate.format(formatter);
+                date.setText(formattedString);
+            }
 
         } catch (Exception e) {
             e.printStackTrace();

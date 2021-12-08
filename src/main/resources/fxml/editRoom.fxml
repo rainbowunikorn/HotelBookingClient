@@ -11,7 +11,7 @@
     <ImageView fitHeight="505.0" fitWidth="818.0" pickOnBounds="true">
         <Image url="@../images/background.jpg" />
     </ImageView>
-    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffb8" height="403.0" layoutX="127.0" layoutY="43.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="627.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffb8" height="403.0" layoutX="60.0" layoutY="43.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="694.0" />
     <Text layoutX="146.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Изменение комнаты">
         <font>
             <Font name="Bookman Old Style" size="21.0" />
@@ -38,7 +38,7 @@
             <Font name="Bookman Old Style" size="15.0" />
         </font></Text>
     <Button fx:id="editButton" layoutX="641.0" layoutY="398.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" text="Изменить" />
-    <Button fx:id="backButton" layoutX="138.0" layoutY="398.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" text="Назад" />
+    <Button fx:id="backButton" layoutX="75.0" layoutY="398.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" text="Назад" />
 
     <Text layoutX="143.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Описание">
         <font>
