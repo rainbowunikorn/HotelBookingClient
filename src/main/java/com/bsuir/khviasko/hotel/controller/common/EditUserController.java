@@ -68,6 +68,11 @@ public class EditUserController {
 
 
             createButton.setOnAction(event -> {
+                validateFirstname(firstnameField.getText());
+                validateSurname(surnameField.getText());
+                validateLogin(loginField.getText());
+                validatePassword(passwordField.getText());
+
                 boolean status = validateFirstname(firstnameField.getText()) && validateSurname(surnameField.getText()) &&
                         validateLogin(loginField.getText()) && validatePassword(passwordField.getText());
                 if (!status) return;

@@ -27,7 +27,7 @@
         </fill>
     </Rectangle>
     <Button fx:id="backButton" layoutX="614.0" layoutY="40.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="87.0" text="Назад" />
-   <Text fill="WHITE" layoutX="111.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Диаграмма стоимости номеров" wrappingWidth="455.13671875">
+   <Text fill="WHITE" layoutX="111.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="График стоимости номеров" wrappingWidth="455.13671875">
        <font>
            <Font name="Bookman Old Style" size="24.0" />
        </font>

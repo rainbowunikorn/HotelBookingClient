@@ -1,12 +1,8 @@
 
 s
 Csrc/main/java/com/bsuir/khviasko/hotel/stageConfig/StageConfig.java,1\2\12a1dcd23dfa0e33af10e2052641b5d1d258cef5
-w
-Gsrc/main/java/com/bsuir/khviasko/hotel/configuration/SocketService.java,e\8\e8a9b24ac1e42acecea1e74b62ad7072a7ecef81
 o
 ?src/main/java/com/bsuir/khviasko/hotel/constants/Constants.java,4\5\4586fc5d47562e823dafeb6ff9756483f6a362fd
-„
-Tsrc/main/java/com/bsuir/khviasko/hotel/controller/common/RegistrationController.java,5\b\5b7575b72c27b8d9eeaafc2e8ea459ee2106e47f
 |
 Lsrc/main/java/com/bsuir/khviasko/hotel/controller/admin/UsersController.java,3\9\397d150b8b6501dfa43d31344a0bd5a7873327db
 i
@@ -35,19 +31,9 @@ Ssrc/main/java/com/bsuir/khviasko/hotel/controller/admin/ReservationsController.
 Rsrc/main/java/com/bsuir/khviasko/hotel/controller/admin/ProfitChartController.java,6\3\6333bea3872dd9eca888f08da462f15115abd6dd
 
 Osrc/main/java/com/bsuir/khviasko/hotel/controller/user/RoomChartController.java,6\9\69a0ac47440d65b784b4cc9d7895cc98425fe087
-€
-Psrc/main/java/com/bsuir/khviasko/hotel/controller/common/EditUserController.java,7\f\7fa8c23d622a18784ff70921a98f911aea98d670
 }
 Msrc/main/java/com/bsuir/khviasko/hotel/controller/common/LoginController.java,a\1\a1c6787d016106246bc9fde6c012e96bd23fd9fd
-p
-@src/main/java/com/bsuir/khviasko/hotel/service/LoginService.java,0\1\01a70461051768cd33f331ed55954147adedf4bc
 
 Osrc/main/java/com/bsuir/khviasko/hotel/controller/menu/AdminMenuController.java,6\a\6af8511500650131f5ba9b506a6503fdfd0ede6f
 ~
 Nsrc/main/java/com/bsuir/khviasko/hotel/controller/menu/UserMenuController.java,2\5\25b6432134995338cebed1e27e0efef89fa61a1b
-|
-Lsrc/main/java/com/bsuir/khviasko/hotel/controller/user/UserRoomsCommand.java,3\4\34df72024ad1b4405a354eaeb056c840d2d35bfe
-†
-Vsrc/main/java/com/bsuir/khviasko/hotel/controller/user/UserReservationsController.java,d\e\ded097d074e7e30bed79548776a98b37c199970f
-`
-0src/main/java/com/bsuir/khviasko/hotel/Main.java,2\f\2f8e70486cdf0de778204f29bf7ed93425b3b80f
